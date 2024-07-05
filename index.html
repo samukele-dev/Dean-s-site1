@@ -33,6 +33,42 @@
 
 <body>
 
+    <style>
+        .features-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .feature-box {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .feature-box img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .feature-description {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
 
     <!-- Start Header Top 
     ============================================= -->
@@ -283,9 +319,39 @@
             </a>
 
         </div>
+
+
+    
+
+
     </div>
     <!-- End Banner -->
 
+    <div class="features-section">
+        <div class="feature-box">
+            <i class="flaticon-house-1"></i>
+            <div class="feature-title">Highest Quality</div>
+            <div class="feature-description">Outstanding quality by our proffessionals equipped with the highest quality of equipment</div>
+        </div>
+        <div class="feature-box">
+            <i class="flaticon-house-1"></i>
+            <div class="feature-title">Affordable Rates</div>
+            <div class="feature-description">Reasonable priced without compromising on quality, Upto 15% discount for loyal customers .</div>
+        </div>
+        <div class="feature-box">
+            <i class="flaticon-house-1"></i>
+            <div class="feature-title">Pick up & Delivery</div>
+            <div class="feature-description">Book a pick up time for your laundryand dry cleaning. cleaned items are then delivered to your home or office.</div>
+        </div>
+        <div class="feature-box">
+            <div class="top">
+
+            <i class="flaticon-house-1"></i>
+            <div class="feature-title">Trusted Partner</div>
+            <div class="feature-description">Trusted partner you can count on, We guarantee satisfaction and accountabitlity to ensure satisfied customers.</div>
+        </div>
+        </div>
+    </div>
 
     <!-- Start Features Area 
     ============================================= -->
@@ -382,11 +448,10 @@
 
 
     <div class="container">
-        <div class="card">
+        <div class="card" style="background-color: #1239ac;">
             <div class="item">
-                <div class="top">
-                    <i class="flaticon-carpet-1"></i>
-                    <h4>Visit us today at 315 Lynnwood Road, Menlo Park, Pretoria or call [Phone Number] to learn more!
+                <div class="top text-center pt-2 m-2">
+                    <h4  style="color: #ffff;">Visit us today at 315 Lynnwood Road, Menlo Park, Pretoria or call [Phone Number] to learn more!
                     </h4>
                 </div>
                 <p>
@@ -398,7 +463,7 @@
 
     <!-- Start Pricing Area 
     ============================================= -->
-    <div id="pricing" class="pricing-area pt-5 shadow default-padding bottom-less">
+    <div id="pricing" class="pricing-area pt-5 shadow default-padding pb-2 bottom-less">
         <!-- Fixed Shape -->
         <div class="fixed-sahpe-bottom">
             <img src="assets/img/shape/19.png" alt="Shape">
@@ -432,7 +497,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 single-item ">
-                        <div class="pricing-item active">
+                        <div class="pricing-item active pb-2">
                             <div class="pricing-header">
                                 <h4 class="padding pb-4">Dry Cleaning</h4>
                                 <hr>
@@ -449,17 +514,23 @@
                                 <h4>$4.00 each
                                 </h4>
                             </div>
+                            <hr>
+                            <div class="price mb-0">
+                                <h4 class="padding pt-2">Suits</h4>
+                                <h4>$4.00 each
+                                </h4>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 single-item">
                         <div class="pricing-item">
                             <div class="pricing-header">
-                                <h4>Suits</h4>
+                                <h4>Commercial Laundry</h4>
                             </div>
                             <div class="price">
-                                <h2><sup>$</sup>10.00</h2>
+                                <h2><sup></sup></h2>
                                 <p>
-                                    each
+                                    Contact us for a customized quote based on your business needs
                                 </p>
                             </div>
                         </div>
@@ -470,52 +541,78 @@
     </div>
     <!-- End Pricing Area -->
 
+    <hr>
+
+
     <!-- Start About 
     ============================================= -->
-    <div id="about" class="about-us-area overflow-hidden default-padding pt-5">
-        <div class="container">
-            <div class="about-items">
-                <!-- Shape -->
-                <div class="shape">
-                    <img src="assets/img/shape/8.png" alt="Shape">
-                </div>
-                <!-- End Shape -->
-                <div class="row align-center">
-                    <div class="col-lg-6">
-                        <div class="thumb">
-                            <img src="assets/img/cleaning.jpg" alt="Thumb">
-                            <img src="assets/img/cleaning.jpg" alt="Thumb">
-                            <div class="experience">
-                                <h2>26</h2>
-                                <h4>Years Experiences</h4>
-                            </div>
+    <div id="about" class="about-us-area overflow-hidden default-padding pt-2">
+        <div class="card m-4 p-4" style="border: none;">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="site-heading mb- text-center ">
+                            <h4>About Us</h4>
+                            <h2></h2>
+                            <div class="devider"></div>
+                            <p>
+                            </p>
                         </div>
                     </div>
-                    <div class="col-lg-6 info">
-                        <h2>We are committed to give <br> our best services</h2>
-                        <blockquote>
-                            Local operations team on-call 24 hours a day, available to work at a moment’s notice.
-                        </blockquote>
-                        <p>
-                            Buscipit tincidunt duis antino gravidia tellusy nascetur neque vulpuits pointings
-                            scelerisque ultrces muscle mass pers order commounication pointing.
-                        </p>
-                        <div class="bottom-info">
-                            <div class="button">
-                                <a data-animation="animated zoomInUp" class="btn btn-theme primary effect btn-md"
-                                    href="#">Contact Us</a>
+                </div>
+            </div>
+
+
+            <div class="container ">
+                <div class="about-items">
+                    <!-- Shape -->
+                    <div class="shape">
+                        <img src="assets/img/shape/8.png" alt="Shape">
+                    </div>
+                    <!-- End Shape -->
+                    <div class="row align-center">
+                        <div class="col-lg-6">
+                            <div class="thumb">
+                                <img src="assets/img/cleaning.jpg" alt="Thumb">
+                                <img src="assets/img/cleaning.jpg" alt="Thumb">
+                                <div class="experience">
+                                    <h2>26</h2>
+                                    <h4>Years Experiences</h4>
+                                </div>
                             </div>
+                        </div>
+                        <div class="col-lg-6 info">
+                            <h2>We are committed to give <br> our best services</h2>
+                            <blockquote>
+                                Get Free Estimate by contacting us on [+00 000 000 0000]
+                            </blockquote>
+                            <p>
+                                We provide a reliable and convenient laundry experience. We are a family-owned business
+                                dedicated to delivering exceptional customer service and high-quality results.
+                            </p>
+                            <div class="bottom-info">
+                                <div class="button">
+                                    <a data-animation="animated zoomInUp" class="btn btn-theme primary effect btn-md"
+                                        href="#">Contact Us</a>
+                                </div>
+
+                                <!---------  
                             <div class="contact">
                                 <div class="content">
                                     <span>Get Free Estimate</span>
                                     <h5>+44-20-7328-4499</h5>
                                 </div>
                             </div>
+                            ----------->
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     <!-- End About Area -->
 
@@ -664,10 +761,10 @@
     ============================================= -->
     <footer class="bg-theme text-light">
         <!-- illustration -->
-        <div class="animate-illustration" >
+        <div class="animate-illustration">
             <img src="assets/img/illustration/2.png" alt="illustration">
         </div>
-        
+
         <!-- Start Footer Bottom -->
         <div class="footer-bottom">
             <div class="container">
