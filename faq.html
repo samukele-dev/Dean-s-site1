@@ -9,10 +9,10 @@
     <meta name="description" content="Cleanu - Cleaning Services Template">
 
     <!-- ========== Page Title ========== -->
-    <title>Cleanu - Cleaning Services Template</title>
+    <title>Cleaning Services</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -39,21 +39,25 @@
 
     <!-- Start Header Top 
     ============================================= -->
-    <div class="top-bar-area inc-pad bg-theme text-light">
-        <div class="container-fill">
+    <div class="top-bar-area multi-content bg-dark">
+        <div class="container">
             <div class="row align-center">
-                <div class="col-lg-5 offset-lg-3 info">
+                <div class="col-lg-3 logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo2.png" class="logo" style="height: 60px;" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-lg-9 info item-flex space-between">
                     <ul>
                         <li>
-                            <i class="fas fa-envelope-open"></i> Info@gmail.com
+                            <i class="fas fa-clock"></i> Hours of Operation: 7:00 AM – 9:00 PM
                         </li>
                         <li>
-                            <i class="fas fa-clock"></i> Working Hours: 8:00 AM – 7:45 PM
+                            <i class="fas fa-phone"></i> +27 00 000 0000
                         </li>
                     </ul>
-                </div>
-                <div class="col-lg-4 text-right item-flex">
                     <div class="social">
+                        <div class="text-center">Follow us on</div>
                         <ul>
                             <li>
                                 <a href="#">
@@ -82,125 +86,149 @@
     ============================================= -->
     <header id="home">
 
-        <!-- Start Navigation -->
-        <nav class="navbar navbar-default navbar-sticky nav-full-width dark bootsnav">
+        <div class="container box-nav">
+            <div class="row">
+                <!-- Start Navigation -->
+                <nav
+                    class="navbar top-less logo-less white navbar-default navbar-fixed dark bootsnav on no-full nav-box no-background">
 
-            <div class="container-fill">
-
-                <div class="row align-center">
-                    
-
-                    <!-- Start Header Navigation -->
-                    <div class="col-lg-3 brand-item">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                                <i class="fa fa-bars"></i>
-                            </button>
-                            <a class="navbar-brand" href="index.html">
-                                <img src="assets/img/logo.png" class="logo" alt="Logo">
-                            </a>
+                    <!-- Start Top Search -->
+                    <div class="top-search">
+                        <div class="container">
+                            <form method="get">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <!-- End Header Navigation -->
+                    <!-- End Top Search -->
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="col-lg-6">
-                        <div class="collapse navbar-collapse" id="navbar-menu">
-                            <ul class="nav navbar-nav" data-in="#" data-out="#">
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="index.html">Home Version One</a></li>
-                                        <li><a href="index-2.html">Home Version Two</a></li>
-                                        <li><a href="index-3.html">Home Version Three</a></li>
-                                        <li><a href="index-4.html">Home Version Four</a></li>
-                                        <li><a href="index-op.html">Home Onepage</a></li>
-                                        <li><a href="index-op-2.html">Home Onepage Two</a></li>
-                                        <li><a href="index-op-3.html">Home Onepage Three</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Pages</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >About Us</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="about-us.html">About Style One</a></li>
-                                                <li><a href="about-2.html">About Style Two</a></li>
-                                            </ul>
+                    <div class="container nav-container">
+                        <div class="row">
+                            <!-- Start Header Navigation -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#navbar-menu">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="assets/img/logo1.png" class="logo" style="height: 250px;" alt="Logo">
+                                </a>
+                            </div>
+                            <!-- End Header Navigation -->
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="col-lg-9">
+                                <div class="collapse navbar-collapse" id="navbar-menu">
+                                    <ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
+                                        <li class="dropdown active">
+                                            <a href="index.html" class="smooth-menu active">Home</a>
                                         </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Team</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="team.html">Team Members</a></li>
-                                                <li><a href="team-single.html">Team Single</a></li>
-                                            </ul>
+                                        <li>
+                                            <a class="smooth-menu" href="about-2.html">About</a>
                                         </li>
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Pricing</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="pricing.html">Pricing Style One</a></li>
-                                                <li><a href="pricing-2.html">Pricing Style Two</a></li>
-                                            </ul>
+                                        <li>
+                                            <a class="smooth-menu" href="services-2.html">Services</a>
                                         </li>
-                                        <li><a href="faq.html">FAQ</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                        <li><a href="404.html">Error Page</a></li>
+                                        <li>
+                                            <a class="smooth-menu" href="#">Gallery</a>
+                                        </li>
+                                        <li>
+                                            <a class="smooth-menu" href="#">News</a>
+                                        </li>
+                                        <li>
+                                            <a class="smooth-menu" href="contact.html">Contact</a>
+                                        </li>
                                     </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Projects</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="projects.html">Projects</a></li>
-                                        <li><a href="project-details.html">Project Details</a></li>
+                                </div>
+                            </div>
+                            <!-- /.navbar-collapse -->
+
+                            <!-- Start Atribute Navigation -->
+                            <div class="col-lg-3">
+                                <div class="attr-nav">
+                                    <ul>
+                                        <li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
+                                        <li class="side-menu">
+                                            <a href="#">
+                                                <span class="bar-1"></span>
+                                                <span class="bar-2"></span>
+                                                <span class="bar-3"></span>
+                                            </a>
+                                        </li>
                                     </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="services.html">Services Version One</a></li>
-                                        <li><a href="services-2.html">Services Version Two</a></li>
-                                        <li><a href="services-details.html">Services Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="blog-standard.html">Blog Standard</a></li>
-                                        <li><a href="blog-with-sidebar.html">Blog With Sidebar</a></li>
-                                        <li><a href="blog-2-colum.html">Blog Grid Two Colum</a></li>
-                                        <li><a href="blog-3-colum.html">Blog Grid Three Colum</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
-                                        <li><a href="blog-single-with-sidebar.html">Blog Single With Sidebar</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">contact</a></li>
+                                </div>
+                            </div>
+                            <!-- End Atribute Navigation -->
+                        </div>
+
+                    </div>
+
+                    <!-- Start Side Menu -->
+                    <div class="side">
+                        <a href="#" class="close-side"><i class="icon_close"></i></a>
+                        <div class="widget">
+                            <img src="assets/img/logo2.png" alt="Logo">
+                            <p>
+                                mission to provide our community with a reliable and convenient laundry experience. We
+                                are a family-owned business dedicated to delivering exceptional customer service and
+                                high-quality results.
+                            </p>
+                        </div>
+                        <div class="widget address">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div class="content">
+                                            <p>Address</p>
+                                            <strong>315 Lynnwood Road, Menlo Park, Pretoria, 0081</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <p>Email</p>
+                                            <strong>support@c.com</strong>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <p>Contact</p>
+                                            <strong>+00-000-000-0000</strong>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="widget newsletter">
+                            <h4 class="title">Get Subscribed!</h4>
+                            <form action="#">
+                                <div class="input-group stylish-input-group">
+                                    <input type="email" placeholder="Enter your e-mail" class="form-control"
+                                        name="email">
+                                    <span class="input-group-addon">
+                                        <button type="submit">
+                                            <i class="arrow_right"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="widget social">
+                            <ul class="link">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <!-- /.navbar-collapse -->
-
-                    <!-- Start Atribute Navigation -->
-                    <div class="col-lg-3">
-                        <div class="attr-nav">
-                            <div class="call">
-                                <div class="icon">
-                                    <img src="assets/img/icon/phone-call.png" alt="Phone">
-                                </div>
-                                <div class="info">
-                                    <span>Have any question?</span>
-                                    <h5>(012) 66795453</h5>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>       
-                    <!-- End Atribute Navigation -->
-
-                </div>
-
+                    <!-- End Side Menu -->
+                </nav>
+                <!-- End Navigation -->
             </div>
-        </nav>
-        <!-- End Navigation -->
+        </div>
 
     </header>
     <!-- End Header -->
@@ -224,7 +252,7 @@
 
     <!-- Start Fa   
     ============================================= -->
-    <div class="faq-area default-padding bg-cover" style="background-image: url(assets/img/2440x1578.png);">
+    <div class="faq-area default-padding bg-cover" style="background-image: url(assets/img/cleaning.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -295,6 +323,7 @@
     </div>
     <!-- End Faq -->
 
+
     <!-- Start Footer 
     ============================================= -->
     <footer class="bg-theme text-light">
@@ -302,123 +331,27 @@
         <div class="animate-illustration">
             <img src="assets/img/illustration/2.png" alt="illustration">
         </div>
-        <!-- End illustration -->
-        <div class="container">
-            <div class="f-items default-padding">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 item">
-                        <div class="f-item about">
-                            <img src="assets/img/logo-light.png" alt="Logo">
-                            <p>
-                                Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address did showing.
-                            </p>
-                            <form action="#">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> <i class="arrow_right"></i></button>  
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 item">
-                        <div class="f-item link">
-                            <h4 class="widget-title">Quick LInk</h4>
-                            <ul>
-                                <li>
-                                    <a href="index.html"><i class="fas fa-angle-right"></i> Home</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> About us</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> Compnay History</a>
-                                </li>
-                                <li>
-                                    <a href="about-us.html"><i class="fas fa-angle-right"></i> Features</a>
-                                </li>
-                                <li>
-                                    <a href="blog-standard.html"><i class="fas fa-angle-right"></i> Blog Page</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-angle-right"></i> Login</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="f-item link">
-                            <h4 class="widget-title">Services</h4>
-                            <ul>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> House Cleaning</a>
-                                </li>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Carpet</a>
-                                </li>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Garden</a>
-                                </li>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Bedroom</a>
-                                </li>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Residential</a>
-                                </li>
-                                <li>
-                                    <a href="services-details.html"><i class="fas fa-angle-right"></i> Maid Services</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="f-item contact-widget">
-                            <h4 class="widget-title">Contact Info</h4>
-                            <div class="address">
-                                <ul>
-                                    <li>
-                                        5919 Trussville Crossings Pkwy, new Dusting town, Austria
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="fas fa-clock"></i>
-                                        </div>
-                                        <div class="content">
-                                            <strong>Opening Hours:</strong>
-                                            8:00 AM – 7:45 PM
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="fas fa-phone"></i>
-                                        </div>
-                                        <div class="content">
-                                            <strong>Phone:</strong>
-                                            <a href="tel:2151234567">+123 34598768</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- Start Footer Bottom -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-box">
                     <div class="row">
                         <div class="col-lg-6">
-                            <p>&copy; Copyright 2022. All Rights Reserved by <a href="https://themeforest.net/user/validthemes/portfolio">validthemes</a></p>
+                            <p>&copy; Copyright 2022. All Rights Reserved by
+                                <a href="#"></a>
+                            </p>
                         </div>
                         <div class="col-lg-6 text-right link">
                             <ul>
                                 <li>
-                                    <a href="about-us.html">Terms</a>
+                                    <a href="#">Terms</a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html">Privacy</a>
+                                    <a href="#">Privacy</a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html">Support</a>
+                                    <a href="#">Support</a>
                                 </li>
                             </ul>
                         </div>
@@ -434,7 +367,7 @@
         <!-- End Fixed Shape -->
     </footer>
     <!-- End Footer -->
-    
+
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -458,4 +391,5 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
