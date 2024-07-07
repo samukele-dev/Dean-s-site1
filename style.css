@@ -239,11 +239,11 @@ a:focus,
 a:hover {
 	outline: none;
 	text-decoration: none;
-	color:#73cfbb;
+	color:#1239ac;
 }
 
 a:hover {
-	color:#73cfbb;
+	color:#1239ac;
 }
 
 a {
@@ -435,7 +435,7 @@ input {
 }
 
 .bg-dark {
-	background-color:#ffff !important;
+	background-color: #001a71 !important;
 }
 
 .bg-dark-secondary {
@@ -636,7 +636,7 @@ a:active {
 .btn.btn-gradient {
 	position: relative;
 	z-index: 1;
-	color: #73cfbb;
+	color: #1239ac;
 }
 
 .btn.btn-gradient::after {
@@ -650,7 +650,7 @@ a:active {
 	background-size: 200% auto;
 	text-transform: uppercase;
 	display: inline-block;
-	color:#73cfbb !important;
+	color:#1239ac !important;
 	background-color:var(--color-primary);
 	z-index: -1;
 	transition: all 0.35s ease-in-out;
@@ -659,7 +659,7 @@ a:active {
 .btn.btn-gradient:hover::after,
 .btn.btn-gradient:active {
 	background-position: -100% 0;
-	color: #73cfbb;
+	color: #1239ac;
 }
 
 .btn.btn-light.effect {
@@ -677,7 +677,7 @@ a:active {
 	content: "";
 	height: 100%;
 	width: 100%;
-	background: #73cfbb;
+	background: #1239ac;
 	z-index: -1;
 	transition: all 0.35s ease-in-out;
 }
@@ -696,7 +696,7 @@ a:active {
 
 .btn.btn-light.effect:hover {
 	border: 2px solid var(--color-primary);
-	color: #73cfbb;
+	color: #1239ac;
 	background: transparent;
 }
 
@@ -717,8 +717,8 @@ a:active {
 }
 
 .btn.btn-theme.effect.secondary {
-	color: #73cfbb;
-	border: 2px solid #73cfbb;
+	color: #1239ac;
+	border: 2px solid #1239ac;
 }
 
 .btn.btn-theme.effect::after {
@@ -734,7 +734,7 @@ a:active {
 }
 
 .btn.btn-theme.effect.secondary::after {
-	background:#73cfbb;
+	background:#1239ac;
 }
 
 .btn.btn-theme.effect::before {
@@ -908,7 +908,7 @@ a:active {
 }
 
 .btn-dark-border:hover {
-	color: #73cfbb !important;
+	color: #1239ac !important;
 }
 
 .btn-light-border {
@@ -916,7 +916,7 @@ a:active {
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
-	color: #73cfbb;
+	color: #1239ac;
 }
 
 .btn-light-border::after {
@@ -926,7 +926,7 @@ a:active {
 	content: "";
 	height: 100%;
 	width: 0;
-	background: #73cfbb;
+	background: #1239ac;
 	z-index: -1;
 	transition: all 0.35s ease-in-out;
 }
@@ -948,7 +948,7 @@ a:active {
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
-	color: #73cfbb;
+	color: #1239ac;
 }
 
 .btn-theme-effect::after {
@@ -1015,7 +1015,7 @@ button:focus {
 .site-heading h4 {
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #73cfbb;
+	color: #1239ac;
 	position: relative;
 	z-index: 1;
 	display: inline-block;
@@ -1024,7 +1024,7 @@ button:focus {
 .sub-heading {
 	text-transform: uppercase;
 	font-weight: 500;
-	color:#73cfbb;
+	color:#1239ac;
 	position: relative;
 	z-index: 1;
 	display: inline-block;
@@ -1187,12 +1187,14 @@ button:focus {
 	padding-left: 18px;
 	position: relative;
 	z-index: 1;
+	color: #ffff;
 }
 
 .top-bar-area li:first-child {
 	margin: 0;
 	padding: 0;
 	border: none;
+	color: #ffff;
 }
 
 .top-bar-area p {
@@ -1301,7 +1303,7 @@ button:focus {
 .top-bar-area.bg-dark .info li i,
 .top-bar-area.bg-theme .info li i,
 .top-bar-area.bg-gradient .info li i {
-	color: var(--dark);
+	color: #ffff;
 }
 
 .top-bar-area.inc-logo {
@@ -1416,13 +1418,13 @@ button:focus {
 	text-align: center;
 	border-radius: 50%;
 	margin: 0;
-	color: #73cfbb;
+	color: #ffff;
 	font-size: 13px;
 }
 
 .top-bar-area.multi-content .social li a i {
 	margin: 0;
-	color: #73cfbb;
+	color: #ffff;
 	font-size: 14px;
 	top: 0;
 }
@@ -7924,7 +7926,7 @@ nav.navbar.bootsnav.navbar-transparent.white .attr-nav {
 
 .features-area .item .top h4 {
 	font-weight: 600;
-	color: #73cfbb;
+	color: #1239ac;
 }
 
 .features-area .item p {

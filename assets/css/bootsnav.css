@@ -819,7 +819,7 @@ nav.navbar.attr-border .attr-nav::before {
 
 .navbar.white.navbar-transparent .attr-nav .side-menu span,
 .navbar.white.no-background .attr-nav .side-menu span {
-	background: var(--white);
+	background: #001a71;
 }
 
 .color-yellow .attr-nav>ul>li>a span.badge {
@@ -1106,7 +1106,7 @@ nav.navbar.bootsnav ul.nav>li.dropdown>a.dropdown-toggle::after {
 }
 
 .navbar .side .widget.social li a {
-	color: #73cfbb;
+	color: #1239ac;
 	display: inline-block;
 	font-weight: 700;
 	height: 45px;
@@ -1540,15 +1540,15 @@ nav.navbar.bootsnav {
 	}
 
 	nav.navbar.bootsnav ul.nav>li>a.active {
-		color: #73cfbb;
+		color: #1239ac;
 	}
 
 	.blue nav.navbar.bootsnav ul.nav>li>a.active {
-		color: #73cfbb;
+		color: #1239ac;
 	}
 
 	nav.navbar.bootsnav.active-bg ul.nav>li>a.active {
-		background: #73cfbb !important;
+		background: #1239ac !important;
 	}
 
 	nav.navbar.bootsnav.active-border ul.nav>li>a.active {
@@ -1563,7 +1563,7 @@ nav.navbar.bootsnav {
 		content: "";
 		height: 0px;
 		width: 80%;
-		border-bottom: 3px solid #73cfbb;
+		border-bottom: 3px solid #1239ac;
 	}
 
 	nav.navbar.bootsnav.small-pad ul.nav>li>a {
@@ -1587,7 +1587,7 @@ nav.navbar.bootsnav {
 	}
 
 	nav.navbar.bootsnav ul.nav>li.active>a {
-		color: #73cfbb;
+		color: #1239ac;
 		border-radius: 30px;
 	}
 
@@ -1618,8 +1618,8 @@ nav.navbar.bootsnav {
 
 	nav.navbar.bootsnav.active-full ul.nav>li>a.active,
 	nav.navbar.bootsnav.active-full ul.nav>li>a:hover {
-		background: #73cfbb none repeat scroll 0 0 !important;
-		color: #73cfbb;
+		background: #1239ac none repeat scroll 0 0 !important;
+		color: #1239ac;
 	}
 
 	nav.navbar.bootsnav.active-full.color-yellow ul.nav>li>a.active,
@@ -1628,11 +1628,11 @@ nav.navbar.bootsnav {
 	}
 
 	nav.navbar.bootsnav.active-full ul.nav>li.active>a:hover {
-		color: #73cfbb;
+		color: #1239ac;
 	}
 
 	nav.navbar.bootsnav ul.nav>li>a:hover {
-		color: #73cfbb;
+		color: #1239ac;
 	}
 
 	nav.navbar.bootsnav.color-yellow ul.nav>li>a:hover {
@@ -1722,7 +1722,7 @@ nav.navbar.bootsnav {
 	}
 
 	nav.navbar.bootsnav ul.navbar-left li.dropdown ul.dropdown-menu li a:hover {
-		color: #73cfbb;
+		color: #1239ac;
 	}
 
 	nav.navbar.bootsnav.color-yellow ul.navbar-left li.dropdown ul.dropdown-menu li a:hover {
@@ -1814,7 +1814,7 @@ nav.navbar.bootsnav {
 	}
 
 	nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover {
-		color: #73cfbb;
+		color: #1239ac;
 	}
 
 	nav.navbar.bootsnav.color-yellow ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover {
@@ -2100,7 +2100,7 @@ nav.navbar.bootsnav {
 	}
 
 	nav.bootsnav.navbar-sidebar ul.nav>li>a:hover {
-		color: #73cfbb;
+		color: #1239ac;
 	}
 
 	nav.bootsnav.navbar-sidebar.color-yellow ul.nav>li>a:hover {
@@ -2264,6 +2264,7 @@ nav.navbar.bootsnav {
 	.nav-box.no-background .container.nav-container {
 		box-shadow: inherit;
 		padding: 0 40px;
+		background-color: #ffff;
 	}
 
 	.nav-box.no-background .container.nav-container .attr-nav .side-menu {
@@ -2287,7 +2288,7 @@ nav.navbar.bootsnav {
 
 	nav.navbar.bootsnav.navbar-fixed.nav-box.no-background ul.nav>li>a,
 	nav.navbar.bootsnav.navbar-fixed.nav-box.no-background .attr-nav>ul>li>a {
-		color: var(--white);
+		color: #001a71;
 	}
 }
 
