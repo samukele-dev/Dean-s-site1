@@ -925,9 +925,7 @@
 	/* Fun Fact */
 	.fun-fact-items .fun-fact {
 		display: block;
-		border: 1px solid #e7e7e7;
 		padding: 30px;
-		background: rgba(255, 255, 255, 0.9);
 	}
 	.bg-dark .fun-fact-items .item .fun-fact,
 	.bg-theme .fun-fact-items .item .fun-fact {
