@@ -1,22 +1,5 @@
 /* ----------------------------------
 
-Template Name: Cleanu - Cleaning Services Template
-Author: validtheme
-Description:
-Version: 1.0
-
-Main Font    : Yantramanav
-Main Color   : #1239ac
-
--------------------------------------
-
-[Typography]
-
-Body copy:    15px 'Yantramanav', sans-serif
-Header:     36px 'Yantramanav', sans-serif
-Input, textarea:  16px 'Yantramanav', sans-serif
-Sidebar heading:  20px 'Yantramanav', sans-serif
-
 >>> TABLE OF CONTENTS:
 =======================
         
@@ -80,7 +63,7 @@ Sidebar heading:  20px 'Yantramanav', sans-serif
 :root {
 	--font-default: 'Yantramanav', sans-serif;
 	--fontawesome: "Font Awesome 5 Pro";
-	--black: #000000;
+	--black: #000000; 
 	--dark: #06278a;
 	--dark-secondary: #06278a;
 	--white: #ffffff; 
@@ -256,11 +239,11 @@ a:focus,
 a:hover {
 	outline: none;
 	text-decoration: none;
-	color:var(--color-heading);
+	color:#73cfbb;
 }
 
 a:hover {
-	color:var(--color-heading);
+	color:#73cfbb;
 }
 
 a {
@@ -453,7 +436,7 @@ input {
 }
 
 .bg-dark {
-	background-color:var(--dark) !important;
+	background-color:#ffff !important;
 }
 
 .bg-dark-secondary {
@@ -654,7 +637,7 @@ a:active {
 .btn.btn-gradient {
 	position: relative;
 	z-index: 1;
-	color: var(--white);
+	color: #73cfbb;
 }
 
 .btn.btn-gradient::after {
@@ -668,7 +651,7 @@ a:active {
 	background-size: 200% auto;
 	text-transform: uppercase;
 	display: inline-block;
-	color: var(--white) !important;
+	color:#73cfbb !important;
 	background-color:var(--color-primary);
 	z-index: -1;
 	transition: all 0.35s ease-in-out;
@@ -677,7 +660,7 @@ a:active {
 .btn.btn-gradient:hover::after,
 .btn.btn-gradient:active {
 	background-position: -100% 0;
-	color: var(--white);
+	color: #73cfbb;
 }
 
 .btn.btn-light.effect {
@@ -695,7 +678,7 @@ a:active {
 	content: "";
 	height: 100%;
 	width: 100%;
-	background: var(--white);
+	background: #73cfbb;
 	z-index: -1;
 	transition: all 0.35s ease-in-out;
 }
@@ -714,7 +697,7 @@ a:active {
 
 .btn.btn-light.effect:hover {
 	border: 2px solid var(--color-primary);
-	color: var(--white);
+	color: #73cfbb;
 	background: transparent;
 }
 
@@ -735,8 +718,8 @@ a:active {
 }
 
 .btn.btn-theme.effect.secondary {
-	color: var(--color-heading);
-	border: 2px solid var(--color-secondary);
+	color: #73cfbb;
+	border: 2px solid #73cfbb;
 }
 
 .btn.btn-theme.effect::after {
@@ -752,7 +735,7 @@ a:active {
 }
 
 .btn.btn-theme.effect.secondary::after {
-	background:var(--color-secondary);
+	background:#73cfbb;
 }
 
 .btn.btn-theme.effect::before {
@@ -926,7 +909,7 @@ a:active {
 }
 
 .btn-dark-border:hover {
-	color: var(--white) !important;
+	color: #73cfbb !important;
 }
 
 .btn-light-border {
@@ -934,7 +917,7 @@ a:active {
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
-	color: var(--white);
+	color: #73cfbb;
 }
 
 .btn-light-border::after {
@@ -944,7 +927,7 @@ a:active {
 	content: "";
 	height: 100%;
 	width: 0;
-	background: var(--white);
+	background: #73cfbb;
 	z-index: -1;
 	transition: all 0.35s ease-in-out;
 }
@@ -966,7 +949,7 @@ a:active {
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
-	color: var(--white);
+	color: #73cfbb;
 }
 
 .btn-theme-effect::after {
@@ -1033,7 +1016,7 @@ button:focus {
 .site-heading h4 {
 	text-transform: uppercase;
 	font-weight: 500;
-	color: var(--color-primary);
+	color: #73cfbb;
 	position: relative;
 	z-index: 1;
 	display: inline-block;
@@ -1042,7 +1025,7 @@ button:focus {
 .sub-heading {
 	text-transform: uppercase;
 	font-weight: 500;
-	color:var(--color-primary);
+	color:#73cfbb;
 	position: relative;
 	z-index: 1;
 	display: inline-block;
@@ -1319,7 +1302,7 @@ button:focus {
 .top-bar-area.bg-dark .info li i,
 .top-bar-area.bg-theme .info li i,
 .top-bar-area.bg-gradient .info li i {
-	color: var(--white);
+	color: var(--dark);
 }
 
 .top-bar-area.inc-logo {
@@ -1434,13 +1417,13 @@ button:focus {
 	text-align: center;
 	border-radius: 50%;
 	margin: 0;
-	color: var(--white);
+	color: #73cfbb;
 	font-size: 13px;
 }
 
 .top-bar-area.multi-content .social li a i {
 	margin: 0;
-	color: var(--white);
+	color: #73cfbb;
 	font-size: 14px;
 	top: 0;
 }
@@ -1451,17 +1434,7 @@ button:focus {
 		z-index: 1;
 		padding-right: 40px;
 	}
-	.top-bar-area.multi-content .logo a::after {
-		position: absolute;
-		right: 0;
-		top: -60px;
-		content: "";
-		height: 200px;
-		width: 4000%;
-		background: var(--white);
-		z-index: -1;
-		transform: skewX(-15deg);
-	}
+	
 }
 
 
@@ -7952,6 +7925,7 @@ nav.navbar.bootsnav.navbar-transparent.white .attr-nav {
 
 .features-area .item .top h4 {
 	font-weight: 600;
+	color: #73cfbb;
 }
 
 .features-area .item p {

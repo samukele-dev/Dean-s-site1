@@ -34,50 +34,81 @@
 <body>
 
     <style>
-        .features-section {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
+        .custom-features-area {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
             background-color: #f9f9f9;
         }
 
-        .feature-box {
-            flex: 1;
-            text-align: center;
-            padding: 20px;
-            margin: 10px;
-            background-color: #fff;
+        .custom-features-items .custom-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .custom-feature-style {
+            flex: 0 0 23%;
+            max-width: 23%;
+            margin: 8px;
+            padding: 0;
+        }
+
+        .custom-feature-style .custom-item {
+            background-color: #ffffff;
             border: 1px solid #ddd;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            padding: 10px;
         }
 
-        .feature-box img {
-            width: 50px;
-            height: 50px;
+        .custom-feature-style .custom-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .custom-feature-style .custom-top i {
+            font-size: 40px;
+            color: #007bff;
             margin-bottom: 15px;
         }
 
-        .feature-title {
-            font-size: 18px;
+        .custom-feature-title {
+            font-size: 20px;
             font-weight: bold;
             margin-bottom: 10px;
+            color: #333;
         }
 
-        .feature-description {
+        .custom-feature-description {
             font-size: 14px;
             color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .custom-feature-style {
+                flex: 0 0 48%;
+                max-width: 48%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .custom-feature-style {
+                flex: 0 0 98%;
+                max-width: 98%;
+            }
         }
     </style>
 
     <!-- Start Header Top 
     ============================================= -->
-    <div class="top-bar-area multi-content bg-dark text-light">
+    <div class="top-bar-area multi-content bg-dark">
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-3 logo">
                     <a href="index.html">
-                        <img src="assets/img/logo2.png" class="logo" style="height: 250px;" alt="Logo">
+                        <img src="assets/img/logo2.png" class="logo" style="height: 60px;" alt="Logo">
                     </a>
                 </div>
                 <div class="col-lg-9 info item-flex space-between">
@@ -89,7 +120,8 @@
                             <i class="fas fa-phone"></i> +27 00 000 0000
                         </li>
                     </ul>
-                    <div class="social">Follow us on
+                    <div class="social">
+                        <div class="text-center">Follow us on</div>
                         <ul>
                             <li>
                                 <a href="#">
@@ -157,7 +189,7 @@
                                 <div class="collapse navbar-collapse" id="navbar-menu">
                                     <ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeOutUp">
                                         <li class="dropdown active">
-                                            <a href="#" class="smooth-menu active">Home</a>
+                                            <a href="index.html" class="smooth-menu active">Home</a>
                                         </li>
                                         <li>
                                             <a class="smooth-menu" href="about-2.html">About</a>
@@ -203,7 +235,7 @@
                     <div class="side">
                         <a href="#" class="close-side"><i class="icon_close"></i></a>
                         <div class="widget">
-                            <img src="#" alt="Logo">
+                            <img src="assets/img/logo2.png" alt="Logo">
                             <p>
                                 mission to provide our community with a reliable and convenient laundry experience. We
                                 are a family-owned business dedicated to delivering exceptional customer service and
@@ -222,13 +254,13 @@
                                     <li>
                                         <div class="content">
                                             <p>Email</p>
-                                            <strong>support@validtheme.com</strong>
+                                            <strong>support@c.com</strong>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="content">
                                             <p>Contact</p>
-                                            <strong>+44-20-7328-4499</strong>
+                                            <strong>+00-000-000-0000</strong>
                                         </div>
                                     </li>
                                 </ul>
@@ -290,12 +322,12 @@
                                 <div class="row">
                                     <div class="col-lg-8">
                                         <div class="content">
-                                            <h3 data-animation="animated slideInDown">Welcome to Clean Clothes – Your
-                                                Local Laundry Solution</h3>
+                                            <h3 data-animation="animated slideInDown">Welcome to Clean Clothes – <span class="" style="color: #73cfbb;" >Your
+                                                Local Laundry Solution</span></h3>
                                             <p data-animation="animated slideInLeft">Convenient, Affordable, and
                                                 Reliable Laundry Services “Have your laundry done the next day"</p>
                                             <div class="bottom" data-animation="animated slideInUp">
-                                                <a class="btn btn-theme primary effect btn-md" href="#">Contact</a>
+                                                <a class="btn btn-theme primary effect btn-md" href="contact.html">Contact</a>
 
                                             </div>
                                         </div>
@@ -316,45 +348,76 @@
             <a class="right carousel-control light" href="#bootcarousel" data-slide="next">
                 <span class="sr-only">Next</span>
             </a>
-
         </div>
-
-
-
-
-
     </div>
     <!-- End Banner -->
 
-    <div class="features-section">
-        <div class="feature-box">
-            <i class="flaticon-house-1"></i>
-            <div class="feature-title">Highest Quality</div>
-            <div class="feature-description">Outstanding quality by our proffessionals equipped with the highest quality
-                of equipment</div>
-        </div>
-        <div class="feature-box">
-            <i class="flaticon-house-1"></i>
-            <div class="feature-title">Affordable Rates</div>
-            <div class="feature-description">Reasonable priced without compromising on quality, Upto 15% discount for
-                loyal customers .</div>
-        </div>
-        <div class="feature-box">
-            <i class="flaticon-house-1"></i>
-            <div class="feature-title">Pick up & Delivery</div>
-            <div class="feature-description">Book a pick up time for your laundryand dry cleaning. cleaned items are
-                then delivered to your home or office.</div>
-        </div>
-        <div class="feature-box">
-            <div class="top">
-
-                <i class="flaticon-house-1"></i>
-                <div class="feature-title">Trusted Partner</div>
-                <div class="feature-description">Trusted partner you can count on, We guarantee satisfaction and
-                    accountabitlity to ensure satisfied customers.</div>
+    <div id="features" class="custom-features-area">
+        <div class="container">
+            <div class="custom-features-items">
+                <div class="custom-row">
+    
+                    <!-- Single Item -->
+                    <div class="custom-feature-style col-lg-4 col-md-6">
+                        <div class="custom-item">
+                            <div class="custom-top">
+                                <i class="flaticon-house-1"></i>
+                                <div class="custom-feature-title">Highest Quality</div>
+                                <div class="custom-feature-description">Outstanding quality by our professionals equipped with the
+                                    highest quality
+                                    of equipment.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Single Item -->
+                    <div class="custom-feature-style col-lg-4 col-md-6">
+                        <div class="custom-item">
+                            <div class="custom-top">
+                                <i class="flaticon-house-1"></i>
+                                <div class="custom-feature-title">Affordable Rates</div>
+                                <div class="custom-feature-description">Reasonably priced without compromising on quality, up to 15%
+                                    discount for
+                                    loyal customers.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Single Item -->
+                    <div class="custom-feature-style col-lg-4 col-md-6">
+                        <div class="custom-item">
+                            <div class="custom-top">
+                                <i class="flaticon-house-1"></i>
+                                <div class="custom-feature-title">Pick up & Delivery</div>
+                                <div class="custom-feature-description">Book a pick-up time for your laundry and dry cleaning.
+                                    Cleaned items are
+                                    then delivered to your home or office.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Single Item -->
+                    <div class="custom-feature-style col-lg-4 col-md-6">
+                        <div class="custom-item">
+                            <div class="custom-top">
+                                <i class="flaticon-house-1"></i>
+                                <div class="custom-feature-title">Trusted Partner</div>
+                                <div class="custom-feature-description">Trusted partner you can count on.
+                                    We guarantee
+                                    satisfaction and
+                                    accountability to ensure satisfied customers.
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
             </div>
         </div>
     </div>
+
 
     <!-- Start Features Area 
     ============================================= -->
@@ -367,8 +430,12 @@
                         <h2>For You</h2>
                         <div class="devider"></div>
                         <p>
-                            At Clean Clothes, we provide top-notch laundry services to make your life easier. Whether
-                            you need drop-off, pick-up or commercial laundry solutions, we’ve got you covered. </p>
+                            At Clean Clothes, we provide top-notch laundry services to make your
+                            life easier.
+                            Whether
+                            you need drop-off, pick-up or commercial laundry solutions, we’ve got
+                            you covered.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -436,7 +503,9 @@
                         <div class="item p-2">
                             <div class="top">
                                 <i class="flaticon-carpet-1"></i>
-                                <h4><a href="#">Pet clothes and blanket cleaning <p>separate machine used</p></a>
+                                <h4><a href="#">Pet clothes and blanket cleaning <p>separate machine
+                                            used</p>
+                                    </a>
                                 </h4>
                             </div>
 
@@ -454,7 +523,9 @@
         <div class="card" style="background-color: #1239ac;">
             <div class="item">
                 <div class="top text-center pt-2 m-2">
-                    <h4 style="color: #ffff;">Visit us today at 315 Lynnwood Road, Menlo Park, Pretoria or call [Phone
+                    <h4 style="color: #ffff;">Visit us today at 315 Lynnwood Road, Menlo Park,
+                        Pretoria or call
+                        [Phone
                         Number] to learn more!
                     </h4>
                 </div>
@@ -566,7 +637,9 @@
                 <div class="row">
                     <div class="fun-fact">
                         <div class="top text-center m-2">
-                            <h4 style="color: #ffff;">Visit us today at 315 Lynnwood Road, Menlo Park, Pretoria or call
+                            <h4 style="color: #ffff;">Visit us today at 315 Lynnwood Road, Menlo
+                                Park, Pretoria
+                                or call
                                 [Phone Number] to learn more!
                             </h4>
                         </div>
@@ -610,7 +683,8 @@
                                 <div class="content">
                                     <img src="assets/img/shape/quote.png" alt="Quote">
                                     <p>
-                                        'Fantastic service! The staff is always friendly, and the facilities are
+                                        'Fantastic service! The staff is always friendly, and the
+                                        facilities are
                                         spotless. Highly recommend!'
                                     </p>
                                     <div class="provider">
@@ -632,7 +706,8 @@
                                 <div class="content">
                                     <img src="assets/img/shape/quote.png" alt="Quote">
                                     <p>
-                                        I love the convenience of the wash & fold service. It saves me so much time!
+                                        I love the convenience of the wash & fold service. It saves me
+                                        so much time!
                                     </p>
                                     <div class="provider">
                                         <div class="rating">
