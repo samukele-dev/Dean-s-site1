@@ -107,6 +107,22 @@
                 max-width: 98%;
             }
         }
+
+        /* Adjust font size for mobile devices */
+        @media (max-width: 767.98px) {
+            .content h3 {
+                font-size: 24px !important;
+                margin-top: 80px;
+            }
+        }
+
+        /* Optional: Adjust font size for tablets */
+        @media (max-width: 991.98px) and (min-width: 768px) {
+            .content h3 {
+                font-size: 32px;
+                /* Adjust font size for tablets */
+            }
+        }
     </style>
 
     <!-- End Header Top -->
@@ -227,7 +243,8 @@
                                 <div class="row">
                                     <div class="col-lg-8">
                                         <div class="content" style="padding-top: 80px;">
-                                            <h3 class="" style="font-size: 45px;" data-animation="animated slideInDown">
+                                            <h3 class="" style="font-size: 45px; padding-top: 50px;"
+                                                data-animation="animated slideInDown">
                                                 Welcome to Clean Clothes – Your
                                                 Local Laundry Solution</span></h3>
                                             <p data-animation="animated slideInLeft">Convenient, Affordable, and
