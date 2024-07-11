@@ -42,6 +42,29 @@
 <body>
 
     <style>
+
+.whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 25px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .whatsapp-button:hover {
+      color: white;
+      text-decoration: none;
+    }
+
         h4.text-color {
             color: #118cd3 !important;
         }
@@ -265,6 +288,7 @@
                                             <div class="bottom" data-animation="animated slideInUp">
                                                 <a class="btn btn-theme primary effect btn-md"
                                                     href="contact.html">Contact</a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -384,7 +408,8 @@
                             <div class="custom-top">
                                 <i class="flaticon-house-1"></i>
                                 <div class="custom-feature-title">Persionalized Experience</div>
-                                <div class="custom-feature-description">We take utmost care of your clothes, segregating based on the cloth type and giving you instant clothes to make a statement.
+                                <div class="custom-feature-description">We take utmost care of your clothes, segregating
+                                    based on the cloth type and giving you instant clothes to make a statement.
                                 </div>
                             </div>
                         </div>
@@ -396,7 +421,8 @@
                             <div class="custom-top">
                                 <i class="flaticon-house-1"></i>
                                 <div class="custom-feature-title">Convenience</div>
-                                <div class="custom-feature-description">With just a tap of a button, your laundry gets done, giving your leisure time to spend with family and friends.
+                                <div class="custom-feature-description">With just a tap of a button, your laundry gets
+                                    done, giving your leisure time to spend with family and friends.
                                 </div>
                             </div>
                         </div>
@@ -408,7 +434,8 @@
                             <div class="custom-top">
                                 <i class="flaticon-house-1"></i>
                                 <div class="custom-feature-title">Instant Order Update</div>
-                                <div class="custom-feature-description">Regular updates of your order, to help you keep a track of your laundry and plan accordingly.
+                                <div class="custom-feature-description">Regular updates of your order, to help you keep
+                                    a track of your laundry and plan accordingly.
                                 </div>
                             </div>
                         </div>
@@ -581,7 +608,11 @@
                                 <p>
                                     Contact us for a customized quote based on your business needs
                                 </p>
-                                <a class="btn btn-theme primary effect btn-md" href="contact.html">Contact</a>
+                                <a class="btn btn-theme primary effect btn-md" href="contact.html">Order Now</a>
+                                <!-- Button to Open PDF -->
+                                <button type="button" class="btn btn-theme primary effect btn-md" onclick="openPDF()">
+                                    View prices
+                                </button>
 
                             </div>
                         </div>
@@ -595,6 +626,10 @@
     <hr>
 
 
+    <!-- WhatsApp Button -->
+<a href="https://wa.me/#" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
 
 
@@ -788,6 +823,11 @@
     <script src="js/popper.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/main.js"></script>
+
+    <script>  // Function to open PDF
+        function openPDF() {
+            window.open('path/to/your/document.pdf', '_blank');
+        }</script>
 
 
 </body>
