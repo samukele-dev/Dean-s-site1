@@ -7855,13 +7855,11 @@ nav.navbar.bootsnav.navbar-transparent.white .attr-nav {
 =================================================================== */
 
 .award .item {
-    padding: 140px 50px;
     position: relative;
     z-index: 9;
     overflow: hidden;
     border: 1px solid #e7e7e7;
     border-radius: 30px;
-    padding-bottom: 50px;
 }
 
 .award .item h4 {
@@ -7893,7 +7891,6 @@ nav.navbar.bootsnav.navbar-transparent.white .attr-nav {
     font-size: 50px;
     font-weight: 600;
     line-height: 1;
-    margin-top: 80px;
 }
 
 .award .item h2 strong {
