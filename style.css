@@ -4149,17 +4149,6 @@ body,
 	z-index: 1;
 }
 
-.testimonials-area.half-bg::after {
-	position: absolute;
-	left: 0;
-	bottom: -100px;
-	content: "";
-	height: 250px;
-	width: 100%;
-	background: var(--bg-gray);
-	z-index: -1;
-	transform: skewY(-5deg);
-}
 
 .testimonial-carousel img {
 	height: 150px;

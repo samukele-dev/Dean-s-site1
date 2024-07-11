@@ -42,28 +42,60 @@
 <body>
 
     <style>
+        .modal-backdrop {
+            z-index: 1050;
+            /* Default Bootstrap backdrop z-index */
+        }
 
-.whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50%;
-      padding: 15px;
-      font-size: 25px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
+        .modal {
+            z-index: 1055;
+            /* Default Bootstrap modal z-index */
+        }
 
-    .whatsapp-button:hover {
-      color: white;
-      text-decoration: none;
-    }
+        .feature-style-three .item .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-style-three .item .top i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+
+        .feature-style-three .item .top i::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 25px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .whatsapp-button:hover {
+            color: white;
+            text-decoration: none;
+        }
 
         h4.text-color {
             color: #118cd3 !important;
@@ -238,6 +270,13 @@
                             </li>
                             <li><a href="services-2.html"><span>Services</span></a></li>
                             <li><a href="#"><span>Gallery</span></a></li>
+                            <li>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    Open first modal
+                                </button>
+                            </li>
 
                         </ul>
                     </nav>
@@ -252,6 +291,37 @@
         </div>
     </header>
 
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal Title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="card">
+                                <button type="button" class="btn btn-theme primary effect btn-md" onclick="openPDF()">
+                                    Washing price list
+                                </button>
+                        </div>
+                        <div class="card">
+                                <button type="button" class="btn btn-theme primary effect btn-md" onclick="openPDF()">
+                                    Dry Cleaning
+                                </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Start Banner 
@@ -286,7 +356,7 @@
                                                 Reliable Laundry Services “Have your laundry done the next day"</p>
                                             <div class="bottom" data-animation="animated slideInUp">
                                                 <a class="btn btn-theme primary effect btn-md"
-                                                    href="contact.html">Order Now</a>
+                                                    href="contact.html">Contact Us</a>
 
                                             </div>
                                         </div>
@@ -309,8 +379,7 @@
                                             <p data-animation="animated slideInLeft">Convenient, Affordable, and
                                                 Reliable Laundry Services “Have your laundry done the next day"</p>
                                             <div class="bottom" data-animation="animated slideInUp">
-                                                <a class="btn btn-theme primary effect btn-md"
-                                                    href="contact.html">Order now</a>
+                                                <a class="btn btn-theme primary effect btn-md" href="contact.html">Contact Us</a>
                                             </div>
                                         </div>
                                     </div>
@@ -433,7 +502,8 @@
                     <!-- Single Item -->
                     <div class="feature-style-three col-lg-4 col-md-6">
                         <div class="item p-2">
-                            <div class="top">
+                            <div class="top" data-toggle="tooltip" data-placement="top"
+                                title="This is our Wash & Fold service.">
                                 <i class="flaticon-house-1"></i>
                                 <h4 class="text-color">Wash & Fold</h4>
                             </div>
@@ -443,7 +513,8 @@
                     <!-- Single Item -->
                     <div class="feature-style-three col-lg-4 col-md-6">
                         <div class="item p-2">
-                            <div class="top">
+                            <div class="top" data-toggle="tooltip" data-placement="top"
+                                title="Professional ironing service.">
                                 <i class="flaticon-kitchen"></i>
                                 <h4 class="text-color">Ironing</h4>
                             </div>
@@ -453,7 +524,8 @@
                     <!-- Single Item -->
                     <div class="feature-style-three col-lg-4 col-md-6">
                         <div class="item p-2">
-                            <div class="top">
+                            <div class="top" data-toggle="tooltip" data-placement="top"
+                                title="Gentle soft wash for delicate fabrics.">
                                 <i class="flaticon-office-desk"></i>
                                 <h4 class="text-color">Soft Wash</h4>
                             </div>
@@ -463,7 +535,8 @@
                     <!-- Single Item -->
                     <div class="feature-style-three col-lg-4 col-md-6">
                         <div class="item p-2">
-                            <div class="top">
+                            <div class="top" data-toggle="tooltip" data-placement="top"
+                                title="Commercial laundry solutions for businesses.">
                                 <i class="flaticon-window-cleaning"></i>
                                 <h4 class="text-color">Commercial Laundry Services</h4>
                             </div>
@@ -473,7 +546,8 @@
                     <!-- Single Item -->
                     <div class="feature-style-three col-lg-4 col-md-6">
                         <div class="item p-2">
-                            <div class="top">
+                            <div class="top" data-toggle="tooltip" data-placement="top"
+                                title="Join our laundry subscription plan.">
                                 <i class="flaticon-commercial-structures"></i>
                                 <h4 class="text-color">Laundry Subscription</h4>
                             </div>
@@ -483,7 +557,8 @@
                     <!-- Single Item -->
                     <div class="feature-style-three col-lg-4 col-md-6">
                         <div class="item p-2">
-                            <div class="top">
+                            <div class="top" data-toggle="tooltip" data-placement="top"
+                                title="Perfect pressing for all your garments.">
                                 <i class="flaticon-carpet-1"></i>
                                 <h4 class="text-color">Pressing</h4>
                             </div>
@@ -567,11 +642,7 @@
                                 <p>
                                     Contact us for a customised quote based on your business needs
                                 </p>
-                                <a class="btn btn-theme primary effect btn-md" href="contact.html">Contact</a>
-                                <!-- Button to Open PDF -->
-                                <button type="button" class="btn btn-theme primary effect btn-md" onclick="openPDF()">
-                                    View prices
-                                </button>
+                                <a class="btn btn-theme primary effect btn-md" href="contact.html">Contact Us</a>
                             </div>
                         </div>
                     </div>
@@ -583,68 +654,11 @@
 
     <hr>
 
-            <!-- Start Process Area
-    ============================================= -->
-    <div class="work-process-area shadow-less text-center default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h4>Cleaning process</h4>
-                        <h2>How we Work</h2>
-                        <div class="devider"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="process-items">
-                <div class="row">
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x800.png" alt="Thumb">
-                                <span>01</span>
-                            </div>
-                            <h5>Book Online</h5>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x800.png" alt="Thumb">
-                                <span>02</span>
-                            </div>
-                            <h5>Get expert cleaner</h5>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x800.png" alt="Thumb">
-                                <span>03</span>
-                            </div>
-                            <h5>Relax & enjoy while we deliver</h5>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Process Area -->
-
-
 
     <!-- WhatsApp Button -->
-<a href="https://wa.me/#" class="whatsapp-button" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+    <a href="https://wa.me/#" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 
 
@@ -677,7 +691,7 @@
     <!-- End Fun Factor Area -->
 
 
-        <!-- Start About 
+    <!-- Start About 
     ============================================= -->
     <div id="about" class="about-us-area overflow-hidden default-padding pt-2">
         <div class="card m-4 p-4" style="border: none;">
@@ -718,28 +732,13 @@
                         <div class="col-lg-6 info">
                             <h2>We are committed to give <br> our best services</h2>
                             <blockquote>
-                                Get Free Estimate by contacting us on [+00 000 000 0000]
+                                Get Free Estimate by contacting us on +27 66 248 4275
                             </blockquote>
                             <p>
                                 We provide a reliable and convenient laundry experience. We are a family-owned business
                                 dedicated to delivering exceptional customer service and high-quality results.
                             </p>
-                            <div class="bottom-info">
-                                <div class="button">
-                                    <a data-animation="animated zoomInUp" class="btn btn-theme primary effect btn-md"
-                                        href="contact.html">Contact Us</a>
-                                </div>
 
-                                <!---------  
-                            <div class="contact">
-                                <div class="content">
-                                    <span>Get Free Estimate</span>
-                                    <h5>+44-20-7328-4499</h5>
-                                </div>
-                            </div>
-                            ----------->
-
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -749,6 +748,63 @@
     </div>
     <!-- End About Area -->
 
+    <!-- Start Process Area
+    ============================================= -->
+    <div class="work-process-area shadow-less text-center default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4>Cleaning process</h4>
+                        <h2>How we Work</h2>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container pb-4">
+            <div class="process-items pb-2">
+                <div class="row">
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
+                                <span>01</span>
+                            </div>
+                            <h5>Book Online</h5>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
+                                <span>02</span>
+                            </div>
+                            <h5>Get expert cleaner</h5>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="single-item col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="assets/img/800x800.png" alt="Thumb">
+                                <span>03</span>
+                            </div>
+                            <h5>Relax & enjoy while we deliver</h5>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Process Area -->
+
     <!-- Start Team 
     ============================================= -->
     <div class="team-area bg-gray default-padding bottom-less">
@@ -757,7 +813,8 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
                         <h4>awesome team</h4>
-                        <h2>Meet our friendly and professional staff <br> who are always here to assist you with your laundry needs.</h2>
+                        <h2>Meet our friendly and professional staff <br> who are always here to assist you with your
+                            laundry needs.</h2>
                         <div class="devider"></div>
                     </div>
                 </div>
@@ -863,7 +920,7 @@
     <!-- End Team-->
 
 
-        <!-- Start Features Area 
+    <!-- Start Features Area 
     ============================================= -->
     <div id="features" class="features-area default-padding bottom-less pt-5 pb-2">
         <div class="container">
@@ -946,7 +1003,6 @@
                                 <h4>Fast services
                                 </h4>
                             </div>
-
                         </div>
                     </div>
                     <!-- End Single Item -->
@@ -955,7 +1011,6 @@
         </div>
     </div>
     <!-- End Features Area -->
-
 
 
     <!-- Start Testimonials Area 
@@ -1022,7 +1077,6 @@
                                 </div>
                             </div>
                             <!-- End Signle Item -->
-
                         </div>
                     </div>
                 </div>
@@ -1030,6 +1084,105 @@
         </div>
     </div>
     <!-- End Testimonials Area  -->
+
+
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="site-heading text-center pt-5">
+                    <h4>Contact Us</h4>
+                    <h2>Read what our satisfied customers have to say about our services.</h2>
+                    <div class="devider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Contact Area 
+    ============================================= -->
+    <div id="contact" class="contact-area default-padding pb-4">
+        <div class="container pb-5">
+            <div class="contact-content">
+                <div class="row">
+                    <div class="col-lg-4 info">
+                        <div class="content text-center text-light">
+                            <div class="thumb">
+                                <img src="assets/img/illustration/4.png" alt="Thumb">
+                            </div>
+                            <ul>
+                                <li>
+                                    <i class="fal fa-map-marker-alt"></i>
+                                    <p>
+                                        315 Lynnwood Road, <br> Menlo Park, Pretoria, <br> 0081
+                                    </p>
+                                </li>
+                                <li>
+                                    <i class="fal fa-headphones-alt"></i>
+                                    <p>
+                                        +27 66 248 4275 <br> +27 82 765 6108
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 contact-form-box">
+                        <div class="form-box">
+                            <h2>Get in Touch</h2>
+                            <p>
+                                Have questions or need assistance? We’re here to help! </p>
+                            <form action="assets/mail/contact.php" method="POST" class="contact-form">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <input class="form-control" id="name" name="name" placeholder="Name"
+                                                type="text">
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="email" name="email" placeholder="Email*"
+                                                type="email">
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input class="form-control" id="phone" name="phone" placeholder="Phone"
+                                                type="text">
+                                            <span class="alert-error"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group comments">
+                                            <textarea class="form-control" id="comments" name="comments"
+                                                placeholder="Message *"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <button type="submit" name="submit" id="submit">
+                                            Send Message <i class="fa fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Alert Message -->
+                                <div class="col-lg-12 alert-notification">
+                                    <div id="message" class="alert-msg"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Area -->
 
     <!-- Star Google Maps
     ============================================= -->
@@ -1113,6 +1266,18 @@
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="js/popper.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script src="js/main.js"></script>
@@ -1120,7 +1285,12 @@
     <script>  // Function to open PDF
         function openPDF() {
             window.open('path/to/your/document.pdf', '_blank');
-        }</script>
+        }
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 
 
 </body>
