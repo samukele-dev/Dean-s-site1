@@ -135,7 +135,7 @@ h3,
 h4,
 h5,
 h6 {
-	margin-bottom: 15px;
+	margin-bottom: 0px;
 }
 
 h1 {
@@ -3731,6 +3731,7 @@ body,
 .pricing-item .price p {
     text-transform: uppercase;
     font-weight: 500;
+	margin: 0;
 }
 
 
@@ -4499,7 +4500,6 @@ body,
 }
 
 .feature-style-three img {
-	margin-bottom: 25px;
 	height: 90px;
 	width: 90px;
 	padding: 20px;
