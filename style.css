@@ -709,7 +709,7 @@ a:active {
 
 .btn.btn-theme.effect {
 	color: var(--white);
-	border: 2px solid var(--color-primary);
+	border: 2px solid #ffff;
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
