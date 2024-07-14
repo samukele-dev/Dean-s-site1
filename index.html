@@ -44,6 +44,28 @@
 <body>
 
     <style>
+        #scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: transparent;
+            color: #118cd3;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 25px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+        #scroll-to-top:hover {
+            color: #1239ac;
+            /* Add a dark-grey background on hover */
+        }
+
         .modal-backdrop {
             z-index: 1050;
             /* Default Bootstrap backdrop z-index */
@@ -186,6 +208,8 @@
         }
     </style>
 
+
+
     <!-- End Header Top -->
 
     <!-- Header 
@@ -270,7 +294,7 @@
                                 </ul>
 
                             </li>
-                            <li><a href="services-2.html"><span>Services</span></a></li>
+                            <li><a href="#features"><span>Services</span></a></li>
                             <li><a href="#"><span>Gallery</span></a></li>
                             <li class=" text-capitalize">
                                 <!-- Button trigger modal -->
@@ -304,19 +328,24 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="card">
-                            <button type="button" class="btn btn-theme primary btn-md" onclick="openPDF()">
-                                Washing
-                            </button>
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-md-4 mb-2">
+                            <div class="card text-center">
+                                <button type="button" class="btn btn-theme primary btn-md p-0" onclick="openPDF()">
+                                    Laundry
+                                </button>
+                            </div>
                         </div>
-                        <div class="card">
-                            <button type="button" class="btn btn-theme primary btn-md" onclick="openPDF()">
-                                Dry Cleaning
-                            </button>
+                        <div class="col-6 col-md-4 mb-2">
+                            <div class="card text-center">
+                                <button type="button" class="btn btn-theme primary btn-md p-0" onclick="openPDF()">
+                                    Dry Cleaning
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
@@ -324,6 +353,9 @@
         </div>
     </div>
 
+
+    <section id="scroll-to-top">↑
+    </section>
 
     <!-- Start Banner 
     ============================================= -->
@@ -674,6 +706,7 @@
 
 
 
+
     <!-- Start Fun Factor Area
     ============================================= -->
     <div class="fun-factor-area bg-theme text-light">
@@ -826,120 +859,6 @@
         </div>
     </div>
     <!-- End Process Area -->
-
-    <!-- Start Team 
-    ============================================= -->
-    <div class="team-area bg-gray default-padding bottom-less">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h4>awesome team</h4>
-                        <h2>Meet our friendly and professional staff <br> who are always here to assist you with your
-                            laundry needs.</h2>
-                        <div class="devider"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="team-style-one-box">
-                <div class="row">
-                    <!-- Single Item -->
-                    <div class="col-lg-4 col-md-6 text-center team-style-one">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
-                                <div class="social">
-                                    <input type="checkbox" id="toggle" class="share-toggle" hidden>
-                                    <label for="toggle" class="share-button">
-                                        <i class="fas fa-plus"></i>
-                                    </label>
-                                    <a href="#" class="share-icon facebook">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="share-icon twitter">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="share-icon instagram">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h4><a href="team-single.html">Anna Green</a></h4>
-                                <p>
-                                    Carpet Cleaner
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-lg-4 col-md-6 text-center team-style-one">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
-                                <div class="social">
-                                    <input type="checkbox" id="toggle2" class="share-toggle" hidden>
-                                    <label for="toggle2" class="share-button">
-                                        <i class="fas fa-plus"></i>
-                                    </label>
-                                    <a href="#" class="share-icon facebook">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="share-icon twitter">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="share-icon instagram">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h4><a href="team-single.html">Liana Rob</a></h4>
-                                <p>
-                                    Office Cleaner
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-lg-4 col-md-6 text-center team-style-one">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
-                                <div class="social">
-                                    <input type="checkbox" id="toggle3" class="share-toggle" hidden>
-                                    <label for="toggle3" class="share-button">
-                                        <i class="fas fa-plus"></i>
-                                    </label>
-                                    <a href="#" class="share-icon facebook">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#" class="share-icon twitter">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="share-icon instagram">
-                                        <i class="fab fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h4><a href="team-single.html">Thomas Pual</a></h4>
-                                <p>
-                                    Cleaning Manager
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Team-->
 
 
     <!-- Start Features Area 
@@ -1147,12 +1066,13 @@
                             <h2>Get in Touch</h2>
                             <p>
                                 Have questions or need assistance? We’re here to help! </p>
-                            <form action="assets/mail/contact.php" method="POST" class="contact-form">
+                            <form action="https://formspree.io/f/{form_id}" method="post" target="_blank"
+                                class="contact-form">
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <input class="form-control" id="name" name="name" placeholder="Name"
-                                                type="text">
+                                                type="text" required="True">
                                             <span class="alert-error"></span>
                                         </div>
                                     </div>
@@ -1161,14 +1081,14 @@
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <input class="form-control" id="email" name="email" placeholder="Email*"
-                                                type="email">
+                                                type="email" required="True">
                                             <span class="alert-error"></span>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <input class="form-control" id="phone" name="phone" placeholder="Phone"
-                                                type="text">
+                                                type="text" required="True">
                                             <span class="alert-error"></span>
                                         </div>
                                     </div>
@@ -1177,8 +1097,13 @@
                                     <div class="col-lg-12">
                                         <div class="form-group comments">
                                             <textarea class="form-control" id="comments" name="comments"
-                                                placeholder="Message *"></textarea>
+                                                placeholder="Message *" required="True"></textarea>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -1298,7 +1223,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
+    <script src="assets/js/script.js"></script>
 
     <script src="js/popper.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
@@ -1313,6 +1238,16 @@
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
         });
+
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            var recaptcha = document.querySelector('.g-recaptcha-response').value;
+            if (recaptcha === "") {
+                event.preventDefault();
+                alert("Please complete the reCAPTCHA");
+            }
+        });
+
+
     </script>
 
 

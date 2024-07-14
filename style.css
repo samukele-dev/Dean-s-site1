@@ -64,10 +64,10 @@
 	--font-default: 'Yantramanav', sans-serif;
 	--fontawesome: "Font Awesome 5 Pro";
 	--black: #000000; 
-	--dark: #06278a;
-	--dark-secondary: #06278a;
+	--dark: #2895d4;
+	--dark-secondary: #1478b3;
 	--white: #ffffff; 
-	--color-primary: #1239ac; 
+	--color-primary: #118cd3; 
 	--color-secondary: #ffb400; 
 	--color-heading: #1d2746;
 	--color-paragraph: #666666;
@@ -525,7 +525,6 @@ input {
 }
 
 .shadow.gradient::after {
-	background: linear-gradient(90deg, rgba(6, 39, 138, 0.846376) 20%, rgba(0, 0, 0, 0) 100%);
 	content: "";
 	height: 100%;
 	left: 0;
@@ -1015,7 +1014,7 @@ button:focus {
 .site-heading h4 {
 	text-transform: uppercase;
 	font-weight: 500;
-	color: #1239ac;
+	color: #118cd3;
 	position: relative;
 	z-index: 1;
 	display: inline-block;
@@ -3697,7 +3696,7 @@ body,
 }
 
 .pricing-item.active {
-    background: var(--color-primary);
+    background: #118cd3;
 }
 
 .pricing-item.active h4, 
