@@ -43,7 +43,8 @@
 <body>
 
     <style>
-        #scroll-to-top {
+        /* Scroll to Top Button Style */
+        .scroll-to-top {
             position: fixed;
             bottom: 20px;
             left: 20px;
@@ -59,6 +60,7 @@
             cursor: pointer;
             font-weight: 800;
         }
+
 
         #scroll-to-top:hover {
             color: #1239ac;
@@ -309,7 +311,9 @@
         </div>
     </header>
 
-
+    <section>
+        <li><a href="#scroll-to-top"></a></li>
+    </section>
 
 
     <!-- Modal -->
@@ -338,7 +342,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
@@ -346,8 +350,9 @@
         </div>
     </div>
 
-
-    <section id="scroll-to-top">↑
+    <!-- Scroll to Top Button -->
+    <section id="scroll-to-top" class="scroll-to-top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </section>
 
     <!-- Start Banner 
@@ -674,7 +679,7 @@
                             <div class="pricing-header">
                                 <h4>Commercial Laundry</h4>
                             </div>
-                            <div class="price" >
+                            <div class="price">
                                 <h2><sup></sup></h2>
                                 <p class="text" style="text-transform: none;">
                                     Contact us for a customised quote based on your business needs
@@ -1007,8 +1012,7 @@
                         <div class="content text-center text-light">
                             <h4>Contact on</h4>
                             <div class="bottom p-4" data-animation="animated slideInUp">
-                                <a class="btn btn-theme primary effect btn-md"
-                                    href="#">WhatsApp</a>
+                                <a class="btn btn-theme primary effect btn-md" href="#">WhatsApp</a>
 
                             </div>
                             <ul>
@@ -1212,6 +1216,23 @@
                 alert("Please complete the reCAPTCHA");
             }
         });
+
+        window.onscroll = function () {
+            const scrollToTopButton = document.getElementById('scroll-to-top');
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        };
+
+        // Scroll to the top of the page when the button is clicked
+        document.getElementById('scroll-to-top').onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Smooth scroll to top
+            });
+        };
 
 
     </script>
