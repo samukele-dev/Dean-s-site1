@@ -7878,6 +7878,8 @@ nav.navbar.bootsnav.navbar-transparent.white .attr-nav {
     font-size: 50px;
     font-weight: 600;
     line-height: 1;
+	padding-bottom: 80px;
+	text-transform: none;
 }
 
 .award .item h2 strong {
