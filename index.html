@@ -43,7 +43,7 @@
 <body>
 
     <style>
-        #scroll-to-top {
+        .scroll-to-top {
             position: fixed;
             bottom: 20px;
             left: 20px;
@@ -60,7 +60,7 @@
             font-weight: 800;
         }
 
-        #scroll-to-top:hover {
+        .scroll-to-top:hover {
             color: #1239ac;
             /* Add a dark-grey background on hover */
         }
@@ -341,7 +341,8 @@
         </div>
     </div>
 
-    
+    <section id="scroll-to-top"></section>
+
     <!-- Start Banner 
     ============================================= -->
     <div class="banner-area top-pad-extra text-regular right-shape content-less">
@@ -694,6 +695,7 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <a class="scroll-to-top" href="#scroll-to-top">^</a>
 
     <!-- Start About 
     ============================================= -->
@@ -1001,7 +1003,8 @@
                         <div class="content text-center text-light">
                             <h4>Contact us on</h4>
                             <div class="bottom p-4" data-animation="animated slideInUp">
-                                <a class="btn btn-theme primary effect btn-md" href="https://wa.me/+27662484275" target="_blank">WhatsApp</a>
+                                <a class="btn btn-theme primary effect btn-md" href="https://wa.me/+27662484275"
+                                    target="_blank">WhatsApp</a>
                             </div>
                             <ul>
                                 <li>
@@ -1204,6 +1207,8 @@
                 alert("Please complete the reCAPTCHA");
             }
         });
+
+
 
     </script>
 
