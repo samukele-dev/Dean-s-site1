@@ -482,7 +482,8 @@
                     <div class="custom-feature-style col-lg-4 col-md-6">
                         <div class="custom-item">
                             <div class="custom-top">
-                                <img src="assets/img/icon/instant-order-update.jpeg" alt="Ironing" style="max-width: 50%; ">
+                                <img src="assets/img/icon/instant-order-update.jpeg" alt="Ironing"
+                                    style="max-width: 50%; ">
                                 <div class="custom-feature-title">Instant order update</div>
                                 <!-- <div class="custom-feature-description">Trusted partner you can count on.
                                     We guarantee
@@ -734,7 +735,8 @@
                             </div>
                         </div>
                         <div class="col-lg-6 info">
-                            <h2>We are committed to giving you <br> the best possible experience ensuring you are happy and
+                            <h2>We are committed to giving you <br> the best possible experience ensuring you are happy
+                                and
                                 your clothes are refreshed.</h2>
                             <blockquote>
                                 Get a Free Estimate by contacting us on +27 66 248 4275
@@ -955,7 +957,7 @@
                             <h2>Get in Touch</h2>
                             <p>
                                 Have questions or need assistance? We’re here to help! </p>
-                            <form action="https://formspree.io/f/{form_id}" method="post" target="_blank"
+                            <form id="contact-form" action="https://formspree.io/f/mvgpgnkn" method="POST"
                                 class="contact-form">
                                 <div class="row">
                                     <div class="col-lg-12">
@@ -1007,6 +1009,7 @@
                                     <div id="message" class="alert-msg"></div>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>
@@ -1134,6 +1137,45 @@
                 event.preventDefault();
                 alert("Please complete the reCAPTCHA");
             }
+        });
+
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var form = event.target;
+            var formData = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(function (response) {
+                if (response.ok) {
+                    // Display success message
+                    var messageElement = document.getElementById("message");
+                    messageElement.innerText = "Message successfully sent!";
+                    messageElement.style.color = "green"; // Optional: Change text color to green
+
+                    // Redirect to the home page after a delay
+                    setTimeout(function () {
+                        window.location.href = "index.html";
+                    }, 2000); // Adjust the delay as needed (2000ms = 2 seconds)
+                } else {
+                    // Handle the error
+                    response.json().then(function (data) {
+                        var messageElement = document.getElementById("message");
+                        messageElement.innerText = data.message || "Oops! There was a problem submitting your form";
+                        messageElement.style.color = "red"; // Optional: Change text color to red
+                    });
+                }
+            }).catch(function (error) {
+                // Handle the error
+                var messageElement = document.getElementById("message");
+                messageElement.innerText = "Oops! There was a problem submitting your form";
+                messageElement.style.color = "red"; // Optional: Change text color to red
+            });
         });
 
 
